@@ -271,15 +271,18 @@ color: var(--accent-color);
 .benefit-list>.item:not(:last-child){
     margin-right: 30px;
 }
+
+
 .benefit-icon{
     height: 120px;
     width: 270px;
     background-color: var(--background-color-grey);
+    border-radius: 4px;
     margin-bottom: 30px;
-    padding: 25px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
 
 .benefits-title {
     margin-bottom: 10px;
@@ -422,12 +425,8 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 }
 
 .client-item:hover,
-.client-item:focus,
-.client-link:hover,
-.client-link:focus{
-    fill: var(--accent-color);
+.client-item:focus{
     border-color: var(--accent-color);
-    color: var(--accent-color);
 }
 
 .client-link{
@@ -439,6 +438,11 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 
     fill: var(--icon-color);
     
+}
+
+.client-link:hover,
+.client-link:focus{
+    fill: var(--accent-color);
 }
 
 
@@ -582,6 +586,7 @@ margin-bottom: 9px;
 
 .footer-list{
     display: flex;
+    align-items: baseline;
 }
 .footer-contacts{
     width: 231px;
@@ -599,9 +604,7 @@ margin-bottom: 9px;
     text-transform: uppercase;
     color: var(--background-main-color);
 }
-.footer-soc{
-    padding-top: 12px;
-}
+
 
 .contacts-soc-link {
 
